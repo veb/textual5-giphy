@@ -11,7 +11,7 @@ if __name__ == '__main__':
         url = "http://api.giphy.com/v1/gifs/search?q={0}&api_key=dc6zaTOxFJmzC&limit=1".format(what)
         data = urllib2.urlopen(url).read()
         j = json.loads(data)
-        result = [d['url'] for d in j['data']]
-        print result[0]
+        result = [d['images'] for d in j['data']]
+        print result[0]['fixed_width']['url']
     else:
         print('/debug Usage: /giphy <search-term>')
