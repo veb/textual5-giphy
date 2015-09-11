@@ -6,6 +6,9 @@ interested in seeing if it could be done easily.
 
 Make sure you place the file in `~/Library/Application Scripts/com.codeux.irc.textual5`
 
+Refer to https://github.com/Giphy/GiphyAPI#request-a-production-key to get your
+own.
+
 Make sure you `chmod +x` it too, otherwise it won't run. 
 
 Then you can type `/giphy hello` on your Textual5 client.
